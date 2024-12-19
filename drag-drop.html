@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/drag-drop.css"></link>
+    <!--browser loads and executes the script right after encountering so we need to 
+    wait till DOM is ready using defer -->
+    <!-- <script src="/drag-drop.js" defer></script> -->
+  </head>
+  <body>
+    <div class = "main">
+        <div id="drop-container" ondragover="dragOver(event)" ondrop="drop(event)">
+            <h2 id = 'drag-txt' draggable="true" ondragstart="dragStart(event)">Jawahar</h2>
+        </div>
+        <div id = 'drop-container' ondragover="dragOver(event)" ondrop="drop(event)"></div>
+    </div>
+    <!-- loads the script after the DOM is completely ready -->
+    <script src="/drag-drop.js"></script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+.main{
+    display: flex;
+}
+
+#drop-container{
+    width: 150px;
+    border: 1px solid black;
+    text-align: center;
+}
